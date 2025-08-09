@@ -1,69 +1,82 @@
 <!DOCTYPE html>
 <head>
     <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Harish</h1>
-    <img src="./SAVE_20230609_081454.jpg" height="60">
-    <h2>Summary</h2>
-    <p>I am a passionate Software Developer with a strong foundation in C++, Java, and Full Stack Development.
-    I enjoy building efficient, scalable, and user-friendly applications.My goal is to create impactful solutions
-    that make life easier for people in AI and web technologies.</p>
-    <hr>
-    <h2>Education</h2>
-    <ul>
-        <li>Master of Technology,Software Engineering-Vellore Institute of Technology-Chennai(2024-2029)</li>
-    </ul>
-    <hr>
-    <h2>Work Experience</h2>
-    <ul>
-        <li><h3>Associate Software Developer</h3></li>
-        <p>July 2029 - June 2031</p>
-        <ul>
-            <li>Coding & Implementation</li>
-            <li>Learning & Collaboration</li>
-            <li>Testing & Debugging</li>
-            <li>Exposure to Full Development Cycle</li>
-        </ul>
-        <li><h3>Team Lead</h3></li>
-        <p>July 2031 - August 2035</p>
-        <ul>
-            <li>Leadership & People Management</li>
-            <li>Technical Oversight</li>
-            <li>Project Management</li>
-            <li>Quality Assurance</li>
-        </ul>
-        
-    </ul>
-    <hr>
-    <h2>Skills</h2>
-    <h4>Technical Skills:</h4> 
-    <ul>
-        <li>C++</li>
-        <li>Java</li>
-        <li>Full Stack Development</li>
-    </ul>
-    <h4>Soft Skills:</h4> 
-    <ul>
-        <li>Communication</li>
-        <li>Problem-Solving</li>
-        <li>Teamwork</li>
-        <li>Leadership</li>
-        <li>Adaptability</li>
-    </ul>
-    <hr>
-    <h2>Certification</h2>
-    <ul>
-        <li>Web Development (Physics Wallah-2025)</li>
-        <li>C++ (CodeDamn-2024)</li>
-        <li>Full Stack Development (Udemy-2025)</li>
-        <li>Robotics</li>
-    </ul>
-    <hr>
-    <h2>Other</h2>
-    <ul>
-        <li><a href="./hobbies.html">My Hobbies</a></li>
-        <li><a href="./contact.html">Contact Me</a></li>
-    </ul>
+    <header>
+        <h1 id="name"></h1>
+        <img src="./SAVE_20230609_081454.jpg" height="60">
+    </header>
 
+    <h2>Summary</h2>
+    <main>
+        <p>I am a passionate Software Developer with a strong foundation in C++, Java, and Full Stack Development.
+        I enjoy building efficient, scalable, and user-friendly applications.My goal is to create impactful solutions
+        that make life easier for people in AI and web technologies.</p>
+        <hr>
+    
+        <h2>Education</h2>
+        <ul>
+            <li>Master of Technology,Software Engineering-Vellore Institute of Technology-Chennai(2024-2029)</li>
+        </ul>
+        <hr>
+        <h2>Work Experience</h2>
+        <ul>
+            <li><h3>Associate Software Developer</h3></li>
+            <p>July 2029 - June 2031</p>
+            <ul>
+                <li>Coding & Implementation</li>
+                <li>Learning & Collaboration</li>
+                <li>Testing & Debugging</li>
+                <li>Exposure to Full Development Cycle</li>
+            </ul>
+            <li><h3>Team Lead</h3></li>
+            <p>July 2031 - August 2035</p>
+            <ul>
+                <li>Leadership & People Management</li>
+                <li>Technical Oversight</li>
+                <li>Project Management</li>
+                <li>Quality Assurance</li>
+            </ul>
+        </ul>
+        <hr>
+
+        <!-- Skills toggle -->
+        <h2 onclick="toggleSkills()" style="cursor:pointer; user-select:none;">Skills (Click to Toggle)</h2>
+        <h4>Technical Skills:</h4> 
+        <ul id="skills">
+            <li>C++</li>
+            <li>Java</li>
+            <li>Full Stack Development</li>
+        </ul>
+        <h4>Soft Skills:</h4> 
+        <ul>
+            <li>Communication</li>
+            <li>Problem-Solving</li>
+            <li>Teamwork</li>
+            <li>Leadership</li>
+            <li>Adaptability</li>
+        </ul>
+        <hr>
+        <h2>Certification</h2>
+        <ul>
+            <li>Web Development (Physics Wallah-2025)</li>
+            <li>C++ (CodeDamn-2024)</li>
+            <li>Full Stack Development (Udemy-2025)</li>
+            <li>Robotics</li>
+        </ul>
+    </main>
+    <hr>
+    <footer>
+        <h2>Other</h2>
+        <ul>
+            <li><a href="./hobbies.html">My Hobbies</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
+        </ul>
+        <p>&copy; <span id="year"></span> Harish Kumar. All rights reserved.</p>
+    </footer>
+
+    <!-- Link JS here, just before closing body -->
+    <script src="script.js"></script>
 </body>
