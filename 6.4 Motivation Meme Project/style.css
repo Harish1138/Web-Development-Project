@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-decoration-color:black
+
+}
+.poster{
+    background-color:white;
+    width: 50%;
+    margin-left:25%;
+    margin-top:100px;
+    color:black;
+    text-align:center;
+    font-family: "Libre Baskervilla",serif;
+    margin-bottom: 100px;
+    
+    
+    
+}
+.Harish-img{
+    margin-top:100px;
+    margin-bottom: 2px;;
+    width:20%;
+    border: 5px solid black;
+}

@@ -1,0 +1,18 @@
+/* .red{
+    color:red;
+}
+.pink{
+    color:pink;
+}
+p[draggable="true"]{
+    color:blueviolet;
+}
+h1[draggable="true"]{
+    color:grey;
+}
+h4[draggable="false"]{
+    color:aqua;
+} */
+*{
+    color:yellowgreen;
+}

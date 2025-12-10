@@ -1,0 +1,42 @@
+#red{
+    color:red;
+    /* font-weight: normal; */
+}
+#blue{
+    color:blue;
+    font-weight:normal;
+}
+#orange{
+    color:orange;
+}
+
+#green{
+    color:green;
+}
+
+#yellow{
+    color:yellow;
+    
+}
+img{
+    height:"200px";
+    width: 200px;
+}
+.color-title{
+    font-size: normal;
+}
+.h{
+
+   font-size: 20px;
+   font-style: italic;
+   /* color: brown; */
+}
+
+footer{
+    font-size: 5em;
+    font-style: italic
+
+}
+
+
+
