@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Harish — Signup</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./1.js"></script>
+
+  <!-- Paste the CSS below here or link to a separate CSS file -->
+  
+</head>
+<body>
+  <main class="container">
+    <form id="signupForm" class="card" novalidate>
+      <h1>Join Us</h1>
+
+      <label class="field">
+        <span>Email</span>
+        <input id="email" name="email" type="email" required placeholder="you@example.com" />
+        <small class="error" id="emailError"></small>
+      </label>
+
+      <label class="field">
+        <span>Password</span>
+        <div class="password-row">
+          <input id="password" name="password" type="password" minlength="8" required placeholder="At least 8 characters" />
+          <button type="button" class="toggle" id="togglePwd" aria-label="Show password">Show</button>
+        </div>
+        <meter id="pwdStrength" min="0" max="4" value="0"></meter>
+        <small id="pwdText" class="muted">Use letters, numbers, and symbols.</small>
+        <small class="error" id="passwordError"></small>
+      </label>
+
+      <label class="field">
+        <span>Confirm Password</span>
+        <input id="confirmPassword" name="confirmPassword" type="password" required placeholder="Re-enter password" />
+        <small class="error" id="confirmError"></small>
+      </label>
+
+      <label class="field">
+        <span>Upload Your Picture</span>
+        <div class="file-row">
+          <input id="picture" name="picture" type="file" accept="image/*" />
+          <div id="previewWrap" aria-hidden="true">
+            <img id="preview" alt="preview" />
+            <button id="removePic" type="button" class="small-btn" title="Remove image">Remove</button>
+          </div>
+        </div>
+        <small class="muted">PNG/JPG up to 2MB</small>
+        <small class="error" id="pictureError"></small>
+      </label>
+
+      <fieldset class="field radio-group">
+        <legend>Gender</legend>
+        <label><input type="radio" name="gender" value="male" required /> Male</label>
+        <label><input type="radio" name="gender" value="female" /> Female</label>
+        <label><input type="radio" name="gender" value="other" /> Other</label>
+        <small class="error" id="genderError"></small>
+      </fieldset>
+
+      <label class="field">
+        <span>Select Country</span>
+        <select id="country" name="country" required>
+          <option value="">Select country</option>
+          <option>United Kingdom</option>
+          <option>India</option>
+          <option>USA</option>
+          <option>Sri Lanka</option>
+        </select>
+        <small class="error" id="countryError"></small>
+      </label>
+
+      <label class="field">
+        <span>Address</span>
+        <textarea id="address" name="address" cols="40" rows="4" placeholder="Street, City, State / Province"></textarea>
+      </label>
+
+      <div class="actions">
+        <button id="submitBtn" type="submit" class="primary">Submit</button>
+        <button type="reset" class="secondary">Reset</button>
+      </div>
+
+      <div id="formMessage" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  
+  
+</body>
+</html>
